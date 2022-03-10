@@ -1,0 +1,11 @@
+.banner-text h1 {
+      font-size: 3.8rem;
+      color: #1f2531;
+      letter-spacing: 8px;
+      font-weight: 600;
+}
+
+.banner-text p {
+      color: #565A5D;
+      font-weight: 700;
+}

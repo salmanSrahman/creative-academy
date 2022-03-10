@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/CommonPart/Header/Header";
 import Footer from "./Components/CommonPart/Footer/Footer";
 import Home from "./Components/Home/Home";
@@ -11,7 +11,7 @@ import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
