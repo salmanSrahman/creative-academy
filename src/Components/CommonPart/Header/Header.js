@@ -28,10 +28,50 @@ const Header = () => {
               >
                 Home
               </NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/services">Services</NavLink>
-              <NavLink to="/faq">FAQ</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink
+                to="/about"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "black" : "gray",
+                    textDecoration: isActive ? "underline" : "none",
+                  };
+                }}
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/services"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "black" : "gray",
+                    textDecoration: isActive ? "underline" : "none",
+                  };
+                }}
+              >
+                Services
+              </NavLink>
+              <NavLink
+                to="/faq"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "black" : "gray",
+                    textDecoration: isActive ? "underline" : "none",
+                  };
+                }}
+              >
+                FAQ
+              </NavLink>
+              <NavLink
+                to="/contact"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "black" : "gray",
+                    textDecoration: isActive ? "underline" : "none",
+                  };
+                }}
+              >
+                Contact
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
