@@ -1,0 +1,53 @@
+.serviceCard-img {
+      height: 175px;
+      object-fit: contain;
+      margin: 0 auto;
+      padding: .3rem 0;
+}
+
+.service-text {
+      padding: .8rem
+}
+
+.service-text button {
+      font-weight: 500;
+}
+
+.card {
+      transition: all linear 0.5s;
+      position: relative;
+}
+
+.card:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -1px;
+      left: 0;
+      background-color: red;
+      transform-origin: bottom right;
+      transition: transform 0.4s ease-out;
+}
+
+.card:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+}
+
+/* .btn-details {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: #f1f1f1;
+      background-color: #1dbb90;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 0;
+      transition: all linear 0.3s;
+} */

@@ -1,17 +1,27 @@
 import React from "react";
-import { Col } from "react-bootstrap";
-
+import { Button, Card, Col } from "react-bootstrap";
+import "./HomeService.css";
 const HomeService = ({ service }) => {
   console.log(service);
-  const { id, img, price, title, description } = service;
+  const { img, price, title } = service;
   return (
-    <div>
-      <Col md={6}>
-        <img src={img} alt="" className="img-fluid" />
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </Col>
-    </div>
+    <Col md={6}>
+      <Card>
+        <img src={img} alt="" className="img-fluid serviceCard-img" />
+        <div className="service-text">
+          <h4 className="text-color">{title}</h4>
+          <h5>{price} $</h5>
+          <div className="d-flex justify-content-between py-2">
+            <Button variant="outline-danger" size="sm">
+              See Details
+            </Button>
+            <Button variant="outline-primary" size="sm">
+              Enroll Now
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </Col>
   );
 };
 
