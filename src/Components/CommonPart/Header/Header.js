@@ -21,7 +21,7 @@ const Header = () => {
                 to="/home"
                 style={({ isActive }) => {
                   return {
-                    color: isActive ? "black" : "gray",
+                    color: isActive ? "red" : "gray",
                     textDecoration: isActive ? "underline" : "none",
                   };
                 }}

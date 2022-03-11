@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useServices from "../../../Hooks/useServices";
-// import serviceCover from "../../../images/services.png";
+import serviceCover from "../../../images/services.png";
 import HomeService from "./HomeService/HomeService";
 import "./HomeServices.css";
 
@@ -11,18 +11,23 @@ const HomeServices = () => {
   return (
     <div className="homeServices-part">
       <Container>
+        <div className="title d-flex justify-content-center">
+          <h1 className="text-color text-center pb-5 text-uppercase">
+            Our Best Services
+          </h1>
+        </div>
         <Row className="g-2">
           <Col
             md={5}
             className="d-flex justify-content-center align-items-center"
           >
-            {/* <img src={serviceCover} alt="" class="img-fluid" /> */}
-            <video width="750" height="500" autoplay muted loop>
+            <img src={serviceCover} alt="" class="img-fluid" />
+            {/* <video width="750" height="500" autoplay muted loop>
               <source
                 src="/https://rabbil.com/video/banner-video.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
           </Col>
           <Col md={7}>
             <Row className="g-4">

@@ -16,6 +16,8 @@
 .card {
       transition: all linear 0.5s;
       position: relative;
+      border: 0;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .card:hover {
@@ -30,7 +32,8 @@
       height: 2px;
       bottom: -1px;
       left: 0;
-      background-color: red;
+      background-color: #bb3340;
+      ;
       transform-origin: bottom right;
       transition: transform 0.4s ease-out;
 }
@@ -40,14 +43,34 @@
       transform-origin: bottom left;
 }
 
-/* .btn-details {
-      text-decoration: none;
-      padding: 5px 10px;
-      color: #f1f1f1;
-      background-color: #1dbb90;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: 600;
-      border: 0;
-      transition: all linear 0.3s;
-} */
+.title {
+      display: inline-block;
+      position: relative;
+
+}
+
+.title h1 {
+      position: relative;
+
+}
+
+
+.title h1:after {
+      content: "";
+      position: absolute;
+      bottom: 36px;
+      left: 0;
+      background: red;
+      width: 58px;
+      height: 4px;
+}
+
+.title h1:before {
+      content: "";
+      position: absolute;
+      bottom: 36px;
+      left: 61px;
+      background: red;
+      width: 18px;
+      height: 4px;
+}
