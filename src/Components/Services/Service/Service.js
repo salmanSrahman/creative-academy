@@ -1,11 +1,10 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./HomeService.css";
-const HomeService = ({ service }) => {
-  const { id, img, price, title } = service;
+
+const Service = ({ service }) => {
+  const { img, price, title } = service;
   return (
-    <Col md={6}>
+    <Col md={4}>
       <Card>
         <img src={img} alt="" className="img-fluid serviceCard-img" />
         <div className="service-text">
@@ -13,7 +12,7 @@ const HomeService = ({ service }) => {
           <h5>{price} $</h5>
           <div className="d-flex justify-content-between py-2">
             <Button variant="outline-danger" size="sm">
-              <Link to={`/homeService/${id}`}> See Details</Link>
+              See Details
             </Button>
             <Button variant="outline-primary" size="sm">
               Enroll Now
@@ -25,4 +24,4 @@ const HomeService = ({ service }) => {
   );
 };
 
-export default HomeService;
+export default Service;

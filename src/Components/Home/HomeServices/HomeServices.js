@@ -22,12 +22,6 @@ const HomeServices = () => {
             className="d-flex justify-content-center align-items-center"
           >
             <img src={serviceCover} alt="" class="img-fluid" />
-            {/* <video width="750" height="500" autoplay muted loop>
-              <source
-                src="/https://rabbil.com/video/banner-video.mp4"
-                type="video/mp4"
-              />
-            </video> */}
           </Col>
           <Col md={7}>
             <Row className="g-4">
