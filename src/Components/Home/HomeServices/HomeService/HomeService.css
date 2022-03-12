@@ -54,7 +54,6 @@
 
 }
 
-
 .title h1:after {
       content: "";
       position: absolute;
@@ -73,4 +72,14 @@
       background: red;
       width: 18px;
       height: 4px;
+}
+
+.service-link {
+      text-decoration: none;
+      color: red;
+      transition: all linear 0.2s;
+}
+
+.service-text button:hover .service-link {
+      color: #fff;
 }
