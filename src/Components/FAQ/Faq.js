@@ -8,8 +8,8 @@ const faq = () => {
     <div className="faq-part">
       <Container>
         <div className="title d-flex justify-content-center">
-          <h1 className="text-color text-center pb-5 text-uppercase FS-4">
-            Your Frequently Questions
+          <h1 className="text-color text-center pb-5 text-uppercase">
+            Your FAQ
           </h1>
         </div>
         <Row className="g-3">

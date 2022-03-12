@@ -1,8 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useServices from "../../../Hooks/useServices";
-import serviceCover from "../../../images/services.png";
+
 import HomeService from "./HomeService/HomeService";
+import programCover from "../../../images/program.gif";
 import "./HomeServices.css";
 
 const HomeServices = () => {
@@ -21,7 +22,7 @@ const HomeServices = () => {
             md={5}
             className="d-flex justify-content-center align-items-center"
           >
-            <img src={serviceCover} alt="" class="img-fluid" />
+            <img src={programCover} alt="" class="img-fluid" />
           </Col>
           <Col md={7}>
             <Row className="g-4">

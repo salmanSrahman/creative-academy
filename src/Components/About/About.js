@@ -1,10 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./About.css";
-import aboutImg from "../../images/about.png";
+import aboutImg from "../../images/services.png";
 import "./About.css";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="about-part">
       <Container>
@@ -26,7 +28,14 @@ const About = () => {
                 favourite teacher's class here. You can take preperatiion of
                 Admission, HSC, SSC etc.
               </p>
-              <Button variant="danger">Get Started</Button>
+              <Button
+                variant="danger"
+                onClick={() => {
+                  navigate("/services");
+                }}
+              >
+                Get Started
+              </Button>
             </div>
           </Col>
         </Row>

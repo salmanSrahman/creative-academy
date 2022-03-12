@@ -11,6 +11,7 @@ import Contact from "./Components/Contact/Contact";
 import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import Enroll from "./Components/Home/HomeServices/HomeService/Enroll/Enroll";
 import ContactMessage from "./Components/Contact/ContactMessage/ContactMessage";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
             element={<ServiceDetails />}
           ></Route>
           <Route path="faq" element={<Faq />}></Route>
-          <Route path="enroll" element={<Enroll />}></Route>
+          <Route path="/enroll/:detailsId" element={<Enroll />}></Route>
           <Route path="contact" element={<Contact />}></Route>
-          <Route path="contactMessage" element={<ContactMessage/>}></Route>
+          <Route path="contactMessage" element={<ContactMessage />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

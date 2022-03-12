@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { img, price, title } = service;
+  const navigate = useNavigate();
+  const { id, img, price, title } = service;
   return (
     <Col md={4}>
       <Card>
@@ -12,9 +14,18 @@ const Service = ({ service }) => {
           <h5>{price} $</h5>
           <div className="d-flex justify-content-between py-2">
             <Button variant="outline-danger" size="sm">
-              See Details
+              <Link to={`/homeService/${id}`} className="service-link">
+                {" "}
+                See Details
+              </Link>
             </Button>
-            <Button variant="outline-primary" size="sm">
+            <Button
+              variant="outline-primary"
+              size="sm"
+              onClick={() => {
+                navigate("/home");
+              }}
+            >
               Enroll Now
             </Button>
           </div>

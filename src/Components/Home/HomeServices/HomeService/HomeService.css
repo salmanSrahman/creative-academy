@@ -54,3 +54,13 @@
 .service-text button:hover .service-link {
       color: #fff;
 }
+
+.service-link1 {
+      text-decoration: none;
+      color: blue;
+      transition: all linear 0.2s;
+}
+
+.service-text button:hover .service-link1 {
+      color: #fff;
+}

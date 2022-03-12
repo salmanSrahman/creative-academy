@@ -1,9 +1,8 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./HomeService.css";
 const HomeService = ({ service }) => {
-  const navigate = useNavigate();
   const { id, img, price, title } = service;
   return (
     <Col md={6}>
@@ -19,14 +18,11 @@ const HomeService = ({ service }) => {
                 See Details
               </Link>
             </Button>
-            <Button
-              variant="outline-primary"
-              size="sm"
-              onClick={() => {
-                navigate("/enroll");
-              }}
-            >
-              Enroll Now
+            <Button variant="outline-primary" size="sm">
+              <Link to={`/enroll/${id}`} className="service-link1">
+                {" "}
+                Enroll Now
+              </Link>
             </Button>
           </div>
         </div>
